@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 790px;
+    border-bottom: 15px solid #5a02be88;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url(/images/bac.png);
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 160px;
+    left: 600px;
+    height: 250px;
+}
+
+.tou {
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    height: 100px;
+}
+
+.blast {
+    position: absolute;
+    left: 1070px;
+    top: 325px;
+    height: 100px;
+}
+
+.b {
+    position: absolute;
+    left: 1410px;
+    top: 425px;
+    height: 70px;
+}
+
+.zero {
+    position: absolute;
+    left: 396px;
+    top: 260px;
+    height: 70px;
+}
+
+.chuva {
+    position: absolute;
+    width: 1900px;
+}
+
+.nuvem {
+    position: absolute;
+    width: 180px;
+    animation: nuvems 10s infinite linear;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    right: -80px;
+    animation: cano 2s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+}
+
+.pulo {
+    animation: pulo 700ms ease-in-out;
+}
+
+@keyframes cano {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 150px;
+    }
+    50% {
+        bottom: 150px;
+    }
+    60% {
+        bottom: 150px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes nuvems {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
